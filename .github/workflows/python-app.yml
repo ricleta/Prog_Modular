@@ -32,7 +32,7 @@ jobs:
       with:
         python-root: '.'
         flake8-flags: ''
-        mypy-flags: 'mypy temp/main.py --ignore-missing-imports'
+        mypy-flags: '--ignore-missing-imports'
         fail-on-isort: false
         skip-flake8: true
 
@@ -50,4 +50,5 @@ jobs:
 
     - name: Test with pytest
       run: |
+        mypy temp/main.py
         if [ -d tests ] || [ -d test ]; then python -m pytest; fi
