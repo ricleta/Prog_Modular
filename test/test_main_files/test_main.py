@@ -1,4 +1,4 @@
-import main
+import main_files/main
 
 
 def test_add():
