@@ -49,5 +49,6 @@ jobs:
         branch: ${{ github.ref }}
 
     - name: Test with pytest
-      run: |
-        if [ -d tests ] || [ -d test ]; then python -m pytest; fi
+      run: pytest tests/
+           mypy temp/
+      
