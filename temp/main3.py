@@ -2,7 +2,7 @@ import math
 import os
 
 
-def add(a, b) -> int:
+def add(b, a) -> int:
     return math.floor(a + b)
 
 
