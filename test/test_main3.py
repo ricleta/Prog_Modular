@@ -1,3 +1,5 @@
+path_to_module = "/Prog_Modular/temp/"
+sys.path.append(path_to_module)
 import main3
 
 
