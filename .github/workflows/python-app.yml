@@ -49,6 +49,6 @@ jobs:
         branch: ${{ github.ref }}
 
     - name: Test with pytest
-      run: pytest test/
-           mypy temp/
+      run: pytest test/;
+           mypy temp/;
       
