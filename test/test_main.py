@@ -2,7 +2,7 @@ import sys
 
 path_to_module = "./temp/"
 sys.path.append(path_to_module)
-import main3
+import main
 
 
 def test_add():
